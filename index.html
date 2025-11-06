@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--   meta start-->
+    <meta charset="UTF-8">
+    <meta name="title" content="Form Validation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bootstrap5">
+    <meta name="keywords" content="practice, bootstrap5">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Furkan Yeasin">
+    <!--   meta end-->
+    <!--    title -->
+    <title>Bootstrap Form Validation</title>
+    <!--    favicon -->
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <!--    css start-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--    css end-->
+</head>
+
+<body>
+    <!--     form start-->
+    <div class="container p-5 s_form">
+        <div class="row">
+            <div class="col-lg col-md">
+                <form action="#" method="get" class="needs-validation" novalidate>
+                    <h2 class="text-center mb-4">Contact Form</h2>
+                    <div class="row">
+                        <h3 class="mb-3">Full Name</h3>
+                        <div class="col-lg col-md col-sm-12 mb-3">
+                            <label for="fname">Enter Your First Name</label>
+                            <input type="text" placeholder="Enter Your First Name" class="form-control my-2" id="fname" required>
+                            <div class="valid-feedback">
+                                Looks Good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please Enter Your First Name!
+                            </div>
+                        </div>
+                        <div class="col-lg col-md col-sm-12 mb-3">
+                            <label for="lname">
+                                Enter Your Last Name
+                            </label>
+                            <input type="text" placeholder="Enter Your Last Name" class="form-control my-2" id="lname" required>
+                            <div class="valid-feedback">
+                                Looks Good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please Enter Your Last Name!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3 class="mb-3">Full Address</h3>
+                        <div class="col-lg col-md col-sm-12 mb-3">
+                            <label for="address">
+                                Enter Your Address
+                            </label>
+                            <input type="text" placeholder="Enter Your Address" class="form-control my-2" id="address" required>
+                            <div class="invalid-feedback">
+                                Enter Your Address!
+                            </div>
+                        </div>
+                        <div class="col-lg col-md col-sm-12 mb-3">
+                            <label for="city">
+                                Enter Your City Name
+                            </label>
+                            <input type="text" placeholder="Enter Your City Name" class="form-control my-2" id="city" required>
+                            <div class="invalid-feedback">
+                                Enter Your City Name!
+                            </div>
+                        </div>
+                        <div class="col-lg col-md col-sm-12 mb-3">
+                            <label for="state">
+                                Enter Your State/Province
+                            </label>
+                            <input type="text" placeholder="Enter Your State/Province" class="form-control my-2" id="state" required>
+                            <div class="invalid-feedback">
+                                Enter Your State/Province!
+                            </div>
+                        </div>
+                        <div class="col-lg col-md col-sm-12 mb-3">
+                            <label for="zipcode">
+                                Enter Your Zip Code
+                            </label>
+                            <input type="text" placeholder="Enter Your Zip Code" class="form-control my-2" id="zipcode" required>
+                            <div class="invalid-feedback">
+                                Please Enter Your Zip/Postal Code!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3 class="mb-3">Contact</h3>
+                        <div class="col-lg col-md col-sm-12 mb-3">
+                            <label for="phone">
+                                Enter Your Phone Number
+                            </label>
+                            <input type="number" placeholder="Enter Your Phone Number" class="form-control my-2" id="phone" required>
+                            <div class="invalid-feedback">
+                                Please Enter Your Phone Number!
+                            </div>
+                        </div>
+                        <div class="col-lg col-md col-sm-12 mb-3">
+                            <label for="email">
+                                Enter a Valid Email Address
+                            </label>
+                            <input type="email" placeholder="Enter a Valid Email Address" class="form-control my-2" id="email" required>
+                            <div class="valid-feedback">
+                                Looks Good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please Enter a valid Email Address!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3 class="mb-3">Message</h3>
+                        <div class="col-lg col-md mb-3">
+                            <textarea name="textarea" id="messages" rows="10" placeholder="Write Your messages" class="form-control" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg col-sm-12 mb-3">
+                            <input type="checkbox" id="checkboxx" required>
+                            <label for="checkboxx">
+                                I agree to the Terms and Conditions.
+                            </label>
+                            <div class="invalid-feedback">
+                                Please Mark the Radio Button!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg text-center">
+                            <input type="submit" value="Submit" class="btn btn-secondary">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--js start-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--js end-->
+</body></html>
